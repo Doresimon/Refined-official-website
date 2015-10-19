@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn" xmlns:wicket="http://wicket.apache.org">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../images/favicon.png">
+
+    <title>规划强化</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="../../bootstrap/css/my-style.css" rel="stylesheet">
+	
+  </head>
+
+  <body class="page-shape-big">
+	<div  align="center" class="header-big">
+			<table class="menu"><tr>
+			<td width="300px" >
+				<div class="div-logo" align="left" >
+		  			<a href="../../homepage.html" wicket:id="linkToHome"><img src="../../images/title/logo.png"  >
+					</a>
+				</div>	
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<td width="auto" valign="bottom" >
+				<div class="div-right">
+					<ul id="nlq-menu" class="first-menu">
+						<li><a href="../jianzhu.html"><font size="4" color="#787878"><strong>建筑 |Architecture</strong></font></a>
+						</li>
+						<li><a href="../guihua.html" ><font size="4" color="#787878"><strong>规划 |Urban Planning</strong></font></a>
+						</li>
+						<li><a href="../studio.html"><font size="4" color="#787878"><strong>工作室|Studio</strong></font></a>
+						</li>
+						<li><a href="../join.html" wicket:id="linkToJoin"><font size="4" color="#787878"><strong>报名|Join</strong></font></a>
+						</li>
+						<li><a href="#"><font size="4" color="#787878" font-family="microsoft yahei" ><strong>联系|Contact</strong></font></a>
+							<ul style="display: none;" id="subMenu5" class="second-menu" >
+								<li><a href="../../homepage.html#cont-contact"><font color="#a3a3a3">联系我们</font></a></li>
+								<li><a href="http://www.renren.com/601872642" target="_blank"><font color="#a3a3a3">人人公共主页</font></a></li>
+								<li><a href="../../homepage.html#cont-contact"><font color="#777777">QQ</font></a></li>
+								<li><a href="http://www.douban.com/group/557965/" target="_blank"><font color="#777777">豆瓣</font></a></li>
+								<li><a href="../images/erweima.png" target="_blank"><font color="#a3a3a3">公众号</font></a></li>
+							</ul> 
+						</li>
+					</ul>
+				</div>
+			</td></tr></table>
+		</div>
+	 
+	
+	<div class="content-bigger-bigger">
+		<div class="blackdiv"></div>
+		<div  class="download" style="margin-bottom:10px;"><a href="guihua/guihuaqianghuaban.pdf">强化班规划_点此下载</a></div>
+		</div>
+	<div>
+		<iframe src="guihua/强化班规划.htm" width="960px" height="2500px"></iframe>
+	</div>
+	<div class="fengexian"></div>
+	
+	<div class="footer">
+		<br>
+		<br>
+		© Refined-Design 2015. All rights reserved.
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  	<script src="../../bootstrap/js/jquery.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../bootstrap/js/jquery.unveil.min.js"></script>
+    <script src="../../bootstrap/js/jquery.scrollUp.min.js"></script>
+	<script language="javascript" type="text/javascript">
+		$(function(){
+			$('#nlq-menu li').hover(function(){
+				$(this).children('ul').stop(true,true).show('slow');
+			},function(){
+				$(this).children('ul').stop(true,true).hide('slow');
+			});
+	
+			
+		});
+	</script>
+	</body>
+</html>

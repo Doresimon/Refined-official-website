@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn" xmlns:wicket="http://wicket.apache.org">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../images/favicon.png">
+
+    <title>Join CAUP.</title>
+    <style type=text/css>
+    	.buttonnn {	
+    			border:1px solid black;
+    			width:80px;
+    			height:40px;
+    			background-color: rgb(150,150,150);
+    			color:white;
+    	}
+    	.buttonnn:hover {	
+    			background-color: rgb(60,60,60);
+    	}
+    </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="../bootstrap/css/my-style.css" rel="stylesheet">
+	
+  </head>
+
+  <body class="page-shape">
+	<div  align="center" class="header">
+			<table class="menu"><tr>
+			<td width="300px" >
+				<div class="div-logo" align="left" >
+		  			<a href="../homepage.html" wicket:id="linkToHome"><img src="../images/title/logo.png">
+					</a>
+				</div>		
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;</td>
+			<td width="auto" valign="bottom" >
+				<div class="div-right" style="background-color:#00c;">
+					<ul id="nlq-menu" class="first-menu">
+						<li><a href="jianzhu.html"><font size="4" color="#787878"><strong>建筑 |Architecture</strong></font></a>
+						</li>
+						<li><a href="guihua.html" ><font size="4" color="#787878"><strong>规划 |Urban Planning</strong></font></a>
+						</li>
+						<li><a href="studio.html"><font size="4" color="#787878"><strong>工作室|Studio</strong></font></a>
+						</li>
+						<li><a href="join.html" wicket:id="linkToJoin"><font size="4" color="#787878"><strong>报名|Join</strong></font></a>
+						</li>
+						<li><a href="#"><font size="4" color="#787878" font-family="microsoft yahei" ><strong>联系|Contact</strong></font></a>
+							<ul style="display: none;" id="subMenu5" class="second-menu" >
+								<li><a href="../homepage.html#cont-contact"><font color="#a3a3a3">联系我们</font></a></li>
+								<li><a href="http://www.renren.com/601872642" target="_blank"><font color="#a3a3a3">人人公共主页</font></a></li>
+								<li><a href="../homepage.html#cont-contact"><font color="#777777">QQ</font></a></li>
+								<li><a href="http://www.douban.com/group/557965/" target="_blank"><font color="#777777">豆瓣</font></a></li>
+								<li><a href="../images/erweima.png" target="_blank"><font color="#a3a3a3">公众号</font></a></li>
+							</ul> 
+						</li>
+					</ul>
+				</div>
+			</td></tr></table>
+		</div>
+	<div class="fengexian"></div>
+	
+	<div>
+		<br>
+		<div class="blackdiv"></div>
+		<div style="margin-left:300px;margin-right:300px;width:360px;text-align:center;">
+		<form >
+			<fieldset name="base">
+				<legend style="text-align:center;">基本信息</legend>
+				<div style="text-align:left;margin-left:55px;margin-righ:55px;">
+					<div style="height:auto; float:left; display:inline;line-height:22px;">
+						<font color="red">*</font>所报课程:<br><br>
+						<font color="red">*</font>姓名:<br><br>
+						<font color="red">*</font>性别:<br><br>
+						<font color="red">*</font>联系电话:<br><br>
+					</div>
+					<div style="height:auto; float:left; display:inline; margin-left:10px;">
+						<select  wicket:id="kecheng">
+							<option value="jianzhu-hanjia-kuaiti">			建筑&nbsp;寒假&nbsp;快题</option>
+							<option value="jianzhu-shuqi-kuaiti">			建筑&nbsp;暑期&nbsp;快题</option>
+							<option value="jianzhu-shuqi-dazonghe">			建筑&nbsp;暑期&nbsp;大综合</option>
+							<option value="jianzhu-shuqi-lishiqianghua">	建筑&nbsp;暑期&nbsp;历史强化</option>
+							<option value="jianzhu-shuqi-jishuqianghua">	建筑&nbsp;暑期&nbsp;技术强化</option>
+							<option value="jianzhu-shiyue-xiaokuaiti">		建筑&nbsp;十月&nbsp;小快题</option>
+							<option value="jianzhu-shiyue-lishidianjing">	建筑&nbsp;十月&nbsp;历史点睛</option>
+							<option value="jianzhu-shiyue-jishudianjing">	建筑&nbsp;十月&nbsp;技术点睛</option>
+							<option value="jianzhu-sanyue-fushichongci">	建筑&nbsp;三月&nbsp;复试冲刺</option>
+							<option value="guihua-hanjia-zhuanyeke">		规划&nbsp;寒假&nbsp;专业课</option>
+							<option value="guihua-shuqi-yuanli">			规划&nbsp;暑期&nbsp;原理</option>
+							<option value="guihua-shuqi-xiangguanzhishi">	规划&nbsp;暑期&nbsp;相关知识</option>
+							<option value="guihua-shiyue-zhuanyekechongci">	规划&nbsp;十月&nbsp;专业课冲刺</option>
+							<option value="guihua-sanyue-fushikuaiti">		规划&nbsp;三月&nbsp;复试快题</option>
+						</select ><br><br>
+						<input type="text" size="20px" wicket:id="name"></input><br><br>
+						<input type="text" size="20px" wicket:id="sex"></input><br><br>
+						<input type="text" size="20px" wicket:id="number"></input><br><br>
+					<div>
+				</div>
+			</fieldset>
+			<fieldset name="extend">
+				<legend style="text-align:center;">其他信息</legend>
+				<div style="text-align:left;margin-left:55px;margin-righ:55px;">
+					<div style="height:auto; float:left; display:inline;line-height:22px;">
+						本科学校:<br><br>
+						专业:<br><br>
+						Email:<br><br>
+						QQ号码:<br><br>
+					</div>
+					<div style="height:auto; float:left; display:inline; margin-left:15px;">
+						<input type="text" size="20px" wicket:id="school"></input><br><br>
+						<input type="text" size="20px" wicket:id="subject"></input><br><br>
+						<input type="text" size="20px" wicket:id="email"></input><br><br>
+						<input type="text" size="20px" wicket:id="qq"></input><br><br>
+					<div>
+				</div>
+				<div style="margin-left:10px">
+					<input type="submit" value="Join us!" wicket:id="tijiao" class="buttonnn"></input><br><br>
+				</div>
+					<span class="label label-warning" wicket:id="emailInfo"></span>
+			</fieldset>
+		</form>
+		</div>
+	</div>
+	<div class="fengexian"></div>
+	
+	<div class="footer">
+		<br>
+		<br>
+		© Refined-Design 2015. All rights reserved.
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  	<script src="../bootstrap/js/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery.unveil.min.js"></script>
+    <script src="../bootstrap/js/jquery.scrollUp.min.js"></script>
+	<script language="javascript" type="text/javascript">
+		$(function(){
+			$('#nlq-menu li').hover(function(){
+				$(this).children('ul').stop(true,true).show('slow');
+			},function(){
+				$(this).children('ul').stop(true,true).hide('slow');
+			});
+	
+			
+		});
+	</script>
+	</body>
+</html>
